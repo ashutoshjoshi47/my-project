@@ -1,0 +1,15 @@
+{
+  "email": "author@example.com",
+  "password": "hashedpassword123",
+  "description": "This is a detailed description of the post. It can be long and contain multiple lines of text.",
+  "title": "My First Blog Post",
+  "photo": "https://example.com/uploads/post-image.jpg",
+  "authorname": "John Doe",
+  "date": "2025-01-26T10:30:00.000Z",
+  "rating": 5,
+  "links": [
+    "https://facebook.com/johndoe",
+    "https://instagram.com/johndoe",
+    "https://johndoe.com"
+  ]
+}
