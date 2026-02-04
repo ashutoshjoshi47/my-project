@@ -2,7 +2,7 @@ import express from 'express';    // Import Express framework to create server a
 import dotenv from 'dotenv';      // Import dotenv to load environment variables (DB credentials, PORT, etc.)
 import sequelize from './config/database.js';  
 import authRoutes from './routes/authRoutes.js'; 
-import blogRoute from './routes/blogRoutes/blogRoute.js';
+import blogRoutes from './routes/blogRoutes.js';
 
 dotenv.config();        // Load variables from .env into process.env
 
@@ -11,7 +11,7 @@ app.use(express.json());      //Whenever a request comes in with JSON data, auto
 
 
 app.use('/', authRoutes);     // Register routes for authentication. POST /register, POST /login.
-app.use('/', blogRoute);      //Register routes for blog operations.  POST /blog, GET /blog
+app.use('/', blogRoutes);      //Register routes for blog operations.  POST /blog, GET /blog
 
 
 // Sync database tables with models defined in Sequelize

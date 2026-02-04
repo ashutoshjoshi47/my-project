@@ -1,4 +1,4 @@
-import blog  from './blog.js';    // Import the Blog model (Sequelize table) to interact with the "blogs" table
+import blog  from '../models/blog.js';    // Import the Blog model (Sequelize table) to interact with the "blogs" table
 
 
 // Controller function to handle creating a new blog.
